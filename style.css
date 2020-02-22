@@ -1,0 +1,195 @@
+html,body{
+	padding:0;
+	margin:0 !important;
+	width:100%;
+	height:100vh;
+	font-family: 'Montserrat';
+	/*background-image: linear-gradient(to left, #2b2f77 , #000);*/
+
+}
+
+
+.logo{
+	left:3%;
+	top:2%;
+	display: flex;
+	position: absolute;
+	
+}
+
+.navbar{
+	position: absolute;
+	margin-left: 50%;
+	margin-top:2%;
+	float: right;
+	height: auto;
+}
+
+.navlist{
+	list-style: none;
+
+}
+
+.nav_list li{
+	
+	display: inline;
+	margin:4vmin;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 2vmin;
+	transition: color 0.2s ease-in;
+}
+
+.nav_list li:hover {
+	
+	color: #454dd9;
+	cursor: pointer;
+}
+
+
+.download_btn{
+	  background-color: #2b2f77;
+	  border: none;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 2vmin;
+	  margin: 4px 2px;
+	  transition: background-color 0.5s ease-in;
+}
+.download_btn:hover{
+	background-color: #454dd9;
+}
+.logo span{
+	margin-top:1vmin;
+	margin-left:1vmin;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.logo svg{
+	width:5vmin;
+	height:5vmin;
+}
+
+#landing_wrapper{
+	width: 100%;
+	height:100vh;
+
+	animation: reveal 2s linear;
+	background-image: linear-gradient(to right, #cad3db , #e1e3e6);
+}
+
+@keyframes reveal{
+	0%{
+		clip-path: circle(10%);
+	}
+
+	100%{
+		clip-path: circle(100%);
+	}
+}
+.content{
+	width:100%;
+
+	display: flex;
+	height:100vh;
+
+}
+
+#reality{
+	color:orange;
+	font-weight: bold;
+}
+.text-content{
+		position: absolute;
+	z-index: 100;
+	width:450px;
+	margin-top:10%;
+	height:auto;
+	font-size: 5rem;
+	font-style:bold;
+	margin-left:10%;
+	word-wrap: break-word;
+}
+.text-content p{
+	font-size: 1.5rem;
+}
+
+
+#landing-anime,.landing-bg{
+	position: absolute;
+	
+	margin-left: 50%;
+	margin-top:6%;
+}
+
+.landing-bg svg{
+	width:70vmin;
+	height:70vmin;
+	z-index:-100;
+}
+
+#landing-anime svg{
+	display:block;
+	width:70vmin;
+	height:70vmin;
+	animation: move 2s alternate infinite ease;
+}
+
+
+#designer{
+	animation: move 2s alternate infinite;
+}
+
+
+@keyframes move{
+	0%{
+		transform: translateY(20px);
+		},
+	100%{
+		transform: translateY(0px);
+	}
+}
+
+@keyframes moveLeftDown{
+	0%{
+		transform: translateX(50px) translateY( 20px) rotateX(20deg);
+		},
+	100%{
+		transform: translateX(0px) translateY(-20px) rotateX(-20deg);
+	}
+}
+
+
+@keyframes moveRightDown{
+	0%{
+		transform: translateX(50px) translateY(20px)rotateX(20deg);
+		},
+	100%{
+		transform: translateX(0px) translateY(-20px)rotateX(-20deg);
+	}
+}
+
+
+.second-layer{
+	display:block;
+}
+
+.second-layer .doc-anime svg {
+	display:block;
+	width:400px;
+	height:400px;
+	
+}
+
+
+#doc2:hover {
+animation: moveLeftDown 1s alternate infinite linear;
+}
+
+#doc4:hover {
+animation: moveRightDown 1s alternate infinite linear;
+}
+
